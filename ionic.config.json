@@ -1,0 +1,8 @@
+{
+  "name": "ionicmoviedatabase",
+  "app_id": "76330f68",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
