@@ -1,3 +1,34 @@
-page-home {
+.fondo-cartas {
 
+  ion-card {
+    position: relative;
+    text-align: center;
+    height: 240px;
+    margin-top: 7%;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	}
+
+
+  .titulo-carta {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .subtitulo-carta {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+  .imagen-carta{
+    position: relative;
+    height: 100%;
+  }
 }

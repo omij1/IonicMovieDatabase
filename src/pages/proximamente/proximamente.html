@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Próximamente</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="proximamente" padding>
+
+	<ion-card *ngFor="let pelicula of peliculas" (click)="detallesPelicula(pelicula.id)">
+		<img class="poster" [src]="pelicula.poster_path"/>
+		<ion-card-header text-wrap>
+			{{pelicula.title}}
+		</ion-card-header>
+		<ion-card-content>
+			<ion-row text-wrap>
+				<ion-col class="estreno" text-wrap>
+					<h5>Estreno:<span color="primary">{{pelicula.release_date}}</span></h5>
+				</ion-col>
+				<ion-col class="descripcion">
+					<p text-wrap>{{pelicula.overview}}</p>
+				</ion-col>
+			</ion-row>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+
+</ion-content>

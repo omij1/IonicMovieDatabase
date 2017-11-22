@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Gente</ion-title>
+  </ion-navbar>
+
+  <ion-navbar color="primary">
+	  <ion-searchbar [(ngModel)]="query" placeholder="Buscar actor"
+		(ionClear)="restaurarEstado()"></ion-searchbar>
+	  	<ion-buttons end>
+		    <button class="buscar" (click)="buscarActor()" ion-button outline small>
+	     	 Buscar
+	    	</button>
+    	</ion-buttons>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="gente" padding>
+
+	<ion-row>
+		<ion-col *ngFor="let item of gente; let i=index" col-6>
+			
+			<ion-card (click)="detallesPersona(item)">
+				<img [src]="item.profile_path"/>
+
+				<div class="nombre">
+					<h2>{{item.name}}</h2>
+				</div>
+
+			</ion-card>
+			
+		</ion-col>
+	</ion-row>
+
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+
+</ion-content>

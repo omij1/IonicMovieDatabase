@@ -1,0 +1,53 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title color="secondary">Películas {{opcion}}</ion-title>
+	    <ion-buttons end>
+		    <button ion-button icon-only  (click)="mostrarOpciones()">
+		      <ion-icon name="list"></ion-icon>
+		    </button>
+    	</ion-buttons>
+  </ion-navbar>
+   <ion-navbar color="primary">
+	  <ion-searchbar [(ngModel)]="query" placeholder="Buscar película"
+		 (ionClear)="restaurarEstado()"></ion-searchbar>
+	<ion-buttons end>
+		<button *ngIf="!checkStatus" name="buscar"class="buscar" (click)="buscarPelicula()" ion-button outline small>
+	      Buscar
+	    </button>
+	    <button *ngIf="checkStatus" class="buscar" (click)="buscarPelicula()" ion-button outline small>
+	      Atras
+	    </button>
+    	</ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content class="pelicula-lista">
+
+	<ion-card *ngFor="let pelicula of peliculas" (click)="detallesPelicula(pelicula.id)">
+		<img class="poster" [src]="pelicula.poster_path"/>
+		<ion-card-header text-wrap>
+			{{pelicula.title}}
+		</ion-card-header>
+		<ion-card-content>
+			<ion-row text-wrap>
+				<ion-col text-wrap>
+					<ion-icon class="calendario" name="calendar"></ion-icon>
+					<h4>{{pelicula.release_date}}</h4>
+				</ion-col>
+				<ion-col text-wrap>
+					<h5>Puntuación:<span color="primary">{{pelicula.vote_average}}</span></h5>
+				</ion-col>
+			</ion-row>
+			<ion-item class="descripcion">
+				<p text-wrap>{{pelicula.overview}}</p>
+			</ion-item>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+
+</ion-content>

@@ -1,0 +1,37 @@
+.favoritos {
+	
+	h2{
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+@media only screen and (max-width: 320px){
+
+	h2{
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	}
+
+@media only screen and (min-width: 768px){
+	
+	h2{
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+}
+
+@media only screen and (min-width: 1024px){
+	
+	h2{
+		font-size: 36px;
+		font-weight: bold;
+		text-align: center;
+	}
+}		
+}

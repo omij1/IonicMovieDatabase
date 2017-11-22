@@ -1,0 +1,44 @@
+.emision-hoy {
+
+	ion-card{
+		border-radius: 7px;
+		box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+		margin-top: 0px;
+	}
+	
+@media only screen and (max-width: 320px){
+
+	.poster{
+		height: 168.6px;
+	}
+}
+
+@media only screen and (min-width: 325px) and (max-width: 395px){
+
+	.poster{
+		height: 193.66px;
+	}
+
+}
+
+@media only screen and (min-width: 400px){
+
+	.poster{
+		height: 227.6px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+
+	.poster{
+		height: 448.8px;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	
+	.poster{
+		height: 648.8px;
+	}
+}	
+}

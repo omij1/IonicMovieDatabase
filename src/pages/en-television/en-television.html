@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>En televisión</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="en-television">
+
+	<ion-card *ngFor="let serie of series" (click)="detallesSerie(serie.id)">
+		<img class="poster" [src]="serie.poster_path"/>
+		<ion-card-header text-wrap>
+			{{serie.name}}
+		</ion-card-header>
+		<ion-card-content>
+			<ion-row text-wrap>
+				<ion-col text-wrap>
+					<ion-icon class="calendario" name="calendar"></ion-icon>
+					<h4>{{serie.first_air_date}}</h4>
+				</ion-col>
+				<ion-col text-wrap>
+					<h5>Puntuación:<span color="primary">{{serie.vote_average}}</span></h5>
+				</ion-col>
+			</ion-row>
+			<ion-item class="descripcion">
+				<p text-wrap>{{serie.overview}}</p>
+			</ion-item>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+
+</ion-content>

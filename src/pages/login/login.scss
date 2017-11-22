@@ -1,0 +1,29 @@
+.pantalla-login {
+
+  .invalid{
+    border-bottom: 1px solid #FF6153;
+  }
+
+
+@media only screen and (min-width: 768px){
+	
+	.powered{
+		position: relative;
+		width: auto;
+		height: auto;
+		display:block;
+		margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+	
+	.powered{
+		position: relative;
+		width: 700px;
+		height: auto;
+		display:block;
+		margin: auto;
+  }
+}
+}

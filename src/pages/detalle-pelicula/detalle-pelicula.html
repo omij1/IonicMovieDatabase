@@ -1,0 +1,70 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Detalle Pelicula</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="detalle-pelicula" padding>
+
+	<ion-card [ngClass]="'fondo'">
+			<ion-card-header text-wrap>
+				<img [src]="pelicula.backdrop_path"/>
+				<ion-row class="titulo">
+					<h2>{{pelicula.title}}</h2>
+				</ion-row>	
+
+				<ion-row class="progreso">
+					<ion-col>
+						<round-progress [max]="10" [current]="pelicula.vote_average"
+						 [responsive]="false" [semicircle]="true">
+						 </round-progress>
+						 <div class="texto"><h3>{{pelicula.vote_average}}</h3></div> 
+					</ion-col>
+					<ion-col>
+						<button class="estreno" color="primary" ion-button outline>
+							<h4>{{pelicula.release_date}}</h4>
+						</button>
+					</ion-col>
+					<ion-col>
+						<button class="fav" color="primary" (click)="agregarFavoritos()" ion-button icon-left round>
+							<ion-icon name="star"></ion-icon>Favoritos
+						</button>
+					</ion-col>
+				</ion-row>
+
+			</ion-card-header>
+			<ion-card-content>
+				<div>
+					<ion-row class="descripcion" text-wrap>
+						<p>{{pelicula.overview}}</p>
+					</ion-row>
+				</div>
+			</ion-card-content>	
+	</ion-card>
+
+	<ion-card class="actores">
+		<h1>Actores principales</h1>
+		<ion-slides [slidesPerView]="2" wrap pager>
+
+			<ion-slide *ngFor="let item of cast" col-6>
+					
+					<ion-card class="actor" (click)="perfilActor(item.id,item.profile_path)">
+						<img class="retrato" [src]="item.profile_path"/>
+						<div>
+							<div class="nombreActor">
+								<h4>{{item.name}}</h4>
+							</div>
+							<div class="papel">
+								<h5>{{item.character}}</h5>
+							</div>
+						</div>
+					</ion-card>
+
+			</ion-slide>
+
+		</ion-slides>
+	</ion-card>
+</ion-content>

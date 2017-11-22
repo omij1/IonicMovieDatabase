@@ -1,0 +1,690 @@
+.detalle-serie{
+
+	ion-card{
+		margin: 0px;
+		padding: 0px;
+		border-radius: 5px;
+	}
+
+	ion-card-header{
+		position:relative;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		padding: 0px;
+	}
+
+	.fondo{
+    	position: relative;
+    	margin: 0px;
+    	top: 0px;
+    	left: 0px;
+		width: 100%;
+		height: auto;
+	}
+
+	.filtro{
+		filter: opacity(100) grayscale(100%) contrast(10%);
+    	-webkit-filter: opacity(100) grayscale(100%) contrast(10%);
+	}
+
+	#cartel{
+		position: sticky;
+		width: 35%;
+		height: auto;
+		float: left;
+		border-radius: 5px;
+		padding: 0px;
+		left: 0px;
+	}
+
+	.progreso{
+		position: relative;
+		background: #E0F8E6;
+		height: auto;
+	}
+
+@media only screen and (max-width: 320px){
+
+	.titulo{
+		position: absolute;
+		max-width: auto;
+		min-width: auto;
+		display: block;
+		top: 5px;
+		width:100%;
+	}
+
+	h2{
+		color: white;
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	round-progress{
+		position: absolute;
+		left: 20%;
+		top: 17%;
+	}
+
+	.texto{
+		position: absolute;
+		top: 50%;
+		left: 42%;
+		transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    text-align: center;
+	    width: 100%;
+	    z-index: 1;
+	}
+
+	h3 {
+		position: absolute;
+		color: #01d277;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.temporada{
+		height: auto;
+		padding: 4px;
+		width: 50px;
+		left: 10%;
+	}
+
+	.fav{
+		height: auto;
+		padding: 7px;
+		right: 5%;
+	}
+
+	h4{
+		font-size: 15px;
+		padding-top: 4px;
+	}
+
+	.descripcion{
+		position: relative;
+		display: block;
+		max-width: 345px;
+		min-width: 220px;
+		float: left;
+		margin-top: 5px;
+		padding: 0px;
+	}
+
+	p{
+		position: relative;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	.actores{
+		width: auto;
+		margin-top: 10px;
+	}
+
+	h1{
+		text-align: center;
+		color: #01d277;
+		font-weight: bold;
+	}
+
+	.retrato{
+		height: 171px;
+		width: 134px;
+	}
+
+	ion-slides{
+		height: 260px;
+		margin-top: 0px;
+	}
+
+	ion-slide{
+		height: 240px;
+		margin: 0px;
+	}
+
+	.actor{
+		border-radius: 5px;
+		box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+		width: auto;
+	}
+
+	.nombreActor{
+		position: relative;
+		text-align: center;
+		white-space: nowrap;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+
+	h4{
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	h5{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 325px) and (max-width: 395px){
+
+	.titulo{
+		position: absolute;
+		max-width: auto;
+		min-width: auto;
+		display: block;
+		top: 5px;
+		width:100%;
+	}
+
+	h2{
+		color: white;
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	round-progress{
+		position: absolute;
+		left: 15%;
+		top: 16%;
+	}
+
+	.texto{
+		position: absolute;
+		top: 54%;
+		left: 34.5%;
+		transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    text-align: center;
+	    width: 100%;
+	    z-index: 1;
+	}
+
+	h3 {
+		position: absolute;
+		color: #01d277;
+		font-size: 17px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.temporada{
+		height: auto;
+		padding: 5px;
+		width: 60px;
+		left: 5%;
+	}
+
+	.fav{
+		height: auto;
+		padding: 8px;
+		right: 5%;
+	}
+
+	h4{
+		padding-top: 3px;
+	}
+
+	.descripcion{
+		position: relative;
+		display: block;
+		max-width: 345px;
+		min-width: 220px;
+		float: left;
+		margin-top: 5px;
+		padding: 0px;
+	}
+
+	p{
+		position: relative;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	.actores{
+		width: auto;
+		margin-top: 10px;
+	}
+
+	h1{
+		text-align: center;
+		color: #01d277;
+		font-weight: bold;
+	}
+
+	ion-slides{
+		height: 280px;
+		margin-top: 0px;
+	}
+
+	ion-slide{
+		height: 240px;
+		margin: 0px;
+	}
+
+	.retrato{
+		height: 201px;
+	}
+
+	.actor{
+		border-radius: 5px;
+		box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	}
+
+	.nombreActor{
+		position: relative;
+		text-align: center;
+		white-space: nowrap;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+
+	h4{
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	h5{
+		font-size: 13px;
+	}
+	}
+
+@media only screen and (min-width: 400px) and (max-width: 760px){
+
+	.titulo{
+		position: absolute;
+		max-width: auto;
+		min-width: auto;
+		display: block;
+		top: 5px;
+		width:100%;
+	}
+
+	h2{
+		color: white;
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	round-progress{
+		position: absolute;
+		left: 15%;
+		top: 10%;
+	}
+
+	.texto{
+		position: absolute;
+		top: 52%;
+		left: 34%;
+		transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    text-align: center;
+	    width: 100%;
+	    z-index: 1;
+	}
+
+	h3 {
+		position: absolute;
+		color: #01d277;
+		font-size: 19px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.temporada{
+		height: auto;
+		padding: 6px;
+		width: 60px;
+		left: 10%;
+	}
+
+	.fav{
+		height: auto;
+		padding: 9px;
+		right: 7%;
+	}
+
+	h4{
+		font-size: 17px;
+		padding-top: 2px;
+	}
+
+	.descripcion{
+		position: relative;
+		display: block;
+		max-width: 345px;
+		min-width: 220px;
+		float: left;
+		margin-top: 5px;
+		padding: 0px;
+	}
+
+	p{
+		position: relative;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	.actores{
+		width: auto;
+		margin-top: 10px;
+	}
+
+	h1{
+		text-align: center;
+		color: #01d277;
+		font-weight: bold;
+	}
+
+	ion-slides{
+		height: 320px;
+		margin-top: 0px;
+	}
+
+	ion-slide{
+		height: 290px;
+		margin: 0px;
+	}
+
+	.retrato{
+		height: 231px;
+	}
+
+	.actor{
+		border-radius: 5px;
+		box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+		margin-left: 10px;
+	}
+
+	.nombreActor{
+		position: relative;
+		text-align: center;
+		white-space: nowrap;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+
+	h4{
+		font-weight: bold;
+		text-align: center;
+	}
+	}
+
+@media only screen and (min-width: 768px){
+
+	.titulo{
+		position: absolute;
+		max-width: auto;
+		min-width: auto;
+		display: block;
+		top: 15px;
+		width:100%;
+	}
+
+	h2{
+		color: white;
+		font-size: 45px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	round-progress{
+		position: absolute;
+		left: 30%;
+		top: 15%;
+	}
+
+	.texto{
+		position: absolute;
+		top: 52%;
+		left: 41%;
+		transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    text-align: center;
+	    width: 100%;
+	    z-index: 1;
+	}
+
+	h3 {
+		position: absolute;
+		color: #01d277;
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.temporada{
+		height: auto;
+		padding: 8px;
+		width: 70px;
+		left: 20%;
+	}
+
+	.fav{
+		height: 47px;
+		width: 170px;
+		padding: 10px;
+	}
+
+	h4{
+		font-size: 25px;
+		padding-top: 2px;
+	}
+
+	.descripcion{
+		position: relative;
+		display: block;
+		max-width: 685px;
+		min-width: 220px;
+		float: left;
+		margin-top: 15px;
+		margin-left: 15px;
+		padding: 0px;
+	}
+
+	p{
+		position: relative;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	.actores{
+		width: auto;
+		margin-top: 20px;
+	}
+
+	h1{
+		font-size: 35px;
+		text-align: center;
+		color: #01d277;
+		font-weight: bold;
+	}
+
+	ion-slides{
+		height: 620px;
+		margin-top: 0px;
+	}
+
+	ion-slide{
+		height: 590px;
+		margin: 0px;
+	}
+
+	.retrato{
+		height: 450.89px;
+		width: 338px;
+	}
+
+	.actor{
+		border-radius: 10px;
+		box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+		margin-left: 10px;
+	}
+
+	.nombreActor{
+		position: relative;
+		text-align: center;
+		white-space: nowrap;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+
+	h4{
+		font-size: 29px;
+		font-weight: bold;
+		text-align: center;
+	}
+	h5{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.titulo{
+		position: absolute;
+		max-width: auto;
+		min-width: auto;
+		display: block;
+		top: 15px;
+		width:100%;
+	}
+
+	h2{
+		color: white;
+		font-size: 45px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	round-progress{
+		position: absolute;
+		left: 40%;
+		top: 15%;
+	}
+
+	.texto{
+		position: absolute;
+		top: 52%;
+		left: 48%;
+		transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    text-align: center;
+	    width: 100%;
+	    z-index: 1;
+	}
+
+	h3 {
+		position: absolute;
+		color: #01d277;
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.temporada{
+		height: auto;
+		padding: 8px;
+		width: 70px;
+		left: 20%;
+	}
+
+	.fav{
+		height: 47px;
+		width: 170px;
+		padding: 10px;
+	}
+
+	h4{
+		font-size: 25px;
+		padding-top: 2px;
+	}
+
+	.descripcion{
+		position: relative;
+		display: block;
+		max-width: 900px;
+		min-width: 220px;
+		float: left;
+		margin-top: 15px;
+		margin-left: 25px;
+		padding: 0px;
+	}
+
+	p{
+		position: relative;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	.actores{
+		margin-top: 20px;
+	}
+
+	h1{
+		font-size: 40px;
+		text-align: center;
+		color: #01d277;
+		font-style: bold;
+	}
+
+	ion-slides{
+		height: 830px;
+		margin-top: 0px;
+	}
+
+	ion-slide{
+		height: 800px;
+		margin: 0px;
+	}
+	
+	.retrato{
+		height: 699px;
+		width: 470px;
+	}
+
+	.actor{
+		border-radius: 15px;
+		box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	}
+
+	.nombreActor{
+		position: relative;
+		text-align: center;
+		white-space: nowrap;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+
+	h4{
+		font-size: 35px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	h5{
+		font-size: 25px;
+	}
+}	
+}

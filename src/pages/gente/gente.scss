@@ -1,0 +1,66 @@
+.gente {
+	
+	ion-card{
+		border-radius: 5px;
+		box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	}
+
+	.nombre{
+		position: relative;
+	}
+
+	h2{
+		font-weight: bold;
+		text-align: center;
+		padding-top: 2px;
+	}
+
+@media only screen and (max-width: 320px){
+	
+	img{
+		height: 171px;
+	}
+}	
+
+@media only screen and (min-width: 325px) and (max-width: 395px){
+
+	img{
+		height: 201px;
+	}
+}
+
+@media only screen and (min-width: 400px){
+	
+	img{
+		height: 231px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	
+	h2{
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 2px;
+	}
+
+	img{
+		height: 450.89px;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	
+	h2{
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 2px;
+	}
+
+	img{
+		height: 699px;
+	}
+}
+}

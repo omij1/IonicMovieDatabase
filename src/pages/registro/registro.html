@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Crear una cuenta</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	
+	<img class="powered" src="assets/imgs/powered.png"/>
+
+	<form [formGroup]="registroForm" (submit)="registroUsuario()" novalidate>
+
+		<ion-item>
+	      <ion-label stacked>Email</ion-label>
+	      <ion-input formControlName="email" type="email" placeholder="Tu dirección email"
+	      [class.invalid]="!registroForm.controls.email.valid && blur"></ion-input>
+	    </ion-item>
+
+	    <ion-item>
+	      <ion-label stacked>Contraseña</ion-label>
+	      <ion-input formControlName="password" type="password" placeholder="Tu contraseña"
+	      [class.invalid]="!registroForm.controls.password.valid && blur"></ion-input>
+	    </ion-item>
+
+	    <button ion-button block type="submit" [disabled]="!registroForm.valid">
+	    	Crear cuenta
+	    </button>
+
+    </form>
+
+</ion-content>

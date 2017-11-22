@@ -1,0 +1,66 @@
+.licencia{
+
+	.fondo-logo{
+		background-color: #ccc;
+	}
+
+	.logo{
+		position: relative;
+		width: auto;
+		height: auto;
+		display:block;
+		margin: auto;
+	}
+
+@media only screen and (max-width: 320px){
+
+	p{
+		position: relative;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	}
+
+@media only screen and (min-width: 325px) and (max-width: 395px){
+
+	p{
+		position: relative;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	}	
+
+@media only screen and (min-width: 400px) and (max-width: 760px){
+	
+	p{
+		position: relative;
+		font-size: 19px;
+		font-weight: bold;
+		text-align: left;
+	}
+}	
+
+@media only screen and (min-width: 768px){
+	
+	p{
+		position: relative;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	
+	p{
+		position: relative;
+		font-size: 36px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+}

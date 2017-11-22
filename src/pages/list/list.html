@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Favoritos</ion-title>
+  </ion-navbar>
+
+<ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="categoria">
+
+      <ion-segment-button value="peliculas" (click)="verPeliculasFavoritas()">
+        Películas
+      </ion-segment-button>
+
+      <ion-segment-button value="series" (click)="verSeriesFavoritas()">
+        Series
+      </ion-segment-button>
+
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="favoritos">
+
+<div [ngSwitch]="categoria">
+
+    <ion-list *ngSwitchCase="'peliculas'">
+
+      <ion-item-sliding *ngFor="let item of items" >
+
+        <ion-item ion-item (click)="verPelicula(item)">
+            <ion-thumbnail item-start>
+              <img [src]="item.imagen"/>
+            </ion-thumbnail>
+            <h2>{{item.nombre}}</h2>
+            <button ion-button clear item-end>Ver</button>
+        </ion-item>
+
+        <ion-item-options>
+
+          <button color="danger" icon-only ion-button (click)="eliminarPelicula(item)">
+            <ion-icon name="trash"></ion-icon>
+          </button>
+
+        </ion-item-options>
+
+      </ion-item-sliding>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'series'">
+
+      <ion-item-sliding *ngFor="let item of items">
+
+        <ion-item ion-item (click)="verSerie(item)">
+            <ion-thumbnail item-start>
+              <img [src]="item.imagen"/>
+            </ion-thumbnail>
+            <h2>{{item.nombre}}</h2>
+            <button ion-button clear item-end>Ver</button>
+        </ion-item>
+
+        <ion-item-options>
+
+          <button color="danger" icon-only ion-button (click)="eliminarSerie(item)">
+            <ion-icon name="trash"></ion-icon>
+          </button>
+
+        </ion-item-options>
+
+      </ion-item-sliding>
+
+    </ion-list>
+
+  </div>
+  
+</ion-content>

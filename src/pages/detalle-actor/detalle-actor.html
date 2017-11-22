@@ -1,0 +1,51 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Detalle Actor</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="detalle-actor" padding>
+
+	<ion-card>
+		<ion-row>
+			<ion-col class="retrato" col-6>
+				<img class="retrato-img" [src]="retrato"/>
+			</ion-col>
+			<ion-col col-6>
+				<div class="nombre">
+					<h2>{{info.name}}</h2>
+				</div>
+				<div class="detalles">
+					<h3>Fecha de nacimiento: </h3>
+					<h4>{{info.birthday}}</h4>
+				</div>
+				<div class="detalles">
+					<h3>Lugar de nacimiento: </h3>
+					<h4>{{info.place_of_birth}}</h4>
+				</div>
+				<div class="detalles">
+					<h3>Fecha de muerte: </h3>
+					<h4>{{info.deathday}}</h4>
+				</div>
+				<div class="detalles">
+					<h3>Actuaciones: </h3>
+					<h4>{{actuaciones.length}}</h4>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-card>
+
+	<ion-row>
+		<ion-col *ngFor="let credit of actuaciones" col-6>
+			
+			<ion-card (click)="detallesCredit(credit.id,credit.media_type)">
+				<img class="poster" [src]="credit.poster_path"/>
+			</ion-card>
+			
+		</ion-col>
+	</ion-row>
+
+</ion-content>

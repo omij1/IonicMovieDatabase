@@ -1,0 +1,201 @@
+.detalle-actor {
+
+	ion-card{
+		border-radius: 7px;
+		box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+		margin-top: 0px;
+	}
+
+	.retrato{
+		padding: 0px;
+	}
+
+@media only screen and (max-width: 320px){
+
+	.retrato-img{
+		height: 100%;
+	}
+
+	.nombre{
+		display: block;
+		margin-top: 4px;
+		border-bottom: #01d277 1px solid;
+	}
+
+	h2{
+		font-weight: bold;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	.detalles{
+		display: block;
+		margin-top: 7px;
+	}
+
+	h3{
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	h4{
+		color: #01d277;
+		font-style: italic;
+	}
+
+	.poster{
+		height: 168.6px;
+	}
+}
+
+@media only screen and (min-width: 325px) and (max-width: 395px){
+
+	.retrato-img{
+		height: 100%;
+	}
+
+	.nombre{
+		display: block;
+		margin-top: 5px;
+		border-bottom: #01d277 1px solid;
+	}
+
+	h2{
+		font-weight: bold;
+		font-size: 17px;
+		text-align: center;
+	}
+
+	.detalles{
+		display: block;
+		margin-top: 8px;
+	}
+
+	h3{
+		font-size: 14px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	h4{
+		color: #01d277;
+		font-style: italic;
+	}
+
+	.poster{
+		height: 193.66px;
+	}
+}
+
+@media only screen and (min-width: 400px){
+
+	.retrato-img{
+		height: 100%;
+	}
+
+	.nombre{
+		display: block;
+		margin-top: 10px;
+		border-bottom: #01d277 1px solid;
+	}
+
+	h2{
+		font-weight: bold;
+		font-size: 19px;
+		text-align: center;
+	}
+
+	.detalles{
+		display: block;
+		margin-top: 15px;
+	}
+
+	h3{
+		font-size: 17px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	h4{
+		color: #01d277;
+		font-style: italic;
+		font-size: 16px;
+	}
+
+	.poster{
+		height: 227.6px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+
+	.nombre{
+		display: block;
+		margin-top: 10px;
+		border-bottom: #01d277 2px solid;
+	}
+
+	h2{
+		font-weight: bold;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.detalles{
+		display: block;
+		margin-top: 30px;
+	}
+
+	h3{
+		font-size: 33px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	h4{
+		color: #01d277;
+		font-style: italic;
+		font-size: 31px;
+	}
+
+	.poster{
+		height: 448.8px;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.nombre{
+		display: block;
+		margin-top: 10px;
+		border-bottom: #01d277 2px solid;
+	}
+
+	h2{
+		font-weight: bold;
+		font-size: 55px;
+		text-align: center;
+	}
+
+	.detalles{
+		display: block;
+		margin-top: 35px;
+	}
+
+	h3{
+		font-size: 46px;
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	h4{
+		color: #01d277;
+		font-style: italic;
+		font-size: 44px;
+	}
+
+	.poster{
+		height: 648.8px;
+	}
+}
+
+}

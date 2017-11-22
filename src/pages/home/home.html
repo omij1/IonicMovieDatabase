@@ -1,14 +1,35 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+     <ion-buttons end>
+        <button ion-button icon-only  (click)="cerrarSesion()">
+          <ion-icon name="exit"></ion-icon>
+        </button>
+      </ion-buttons>
+    <ion-title>{{titulo}}</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="fondo-cartas">
+
+  <ion-card id="peliculas" (click)="seleccionPrincipal($event)">
+    <img class="imagen-carta" src="assets/imgs/pelicula.jpeg"/>
+    <div class="titulo-carta">Películas</div>
+    <div class="subtitulo-carta"></div>
+  </ion-card>
+
+  <ion-card id="series" (click)="seleccionPrincipal($event)">
+    <img class="imagen-carta" src="assets/imgs/series.jpeg"/>
+    <div class="titulo-carta">Series</div>
+    <div class="subtitulo-carta"></div>
+  </ion-card>
+
+  <ion-card id="gente" (click)="seleccionPrincipal($event)">
+    <img class="imagen-carta" src="assets/imgs/selfie.jpg"/>
+    <div class="titulo-carta">Gente</div>
+    <div class="subtitulo-carta"></div>
+  </ion-card>
+
 </ion-content>

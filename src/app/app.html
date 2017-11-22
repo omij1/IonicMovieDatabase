@@ -1,1 +1,39 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+
+    <ion-list-header>
+      Peliculas
+      <ion-list>
+        <button menuClose ion-item *ngFor="let pe of peliculas" (click)="openPage(pe)" >
+          {{pe.title}}
+        </button>
+      </ion-list>
+    </ion-list-header>
+
+    <ion-list-header>
+      Series
+      <ion-list>
+        <button menuClose ion-item *ngFor="let s of series" (click)="openPage(s)">
+          {{s.title}}
+        </button>
+      </ion-list>
+    </ion-list-header>
+
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

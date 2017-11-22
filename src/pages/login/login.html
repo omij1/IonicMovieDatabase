@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Iniciar sesión</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="pantalla-login" padding>
+
+  <img class="powered" src="assets/imgs/powered.png"/>
+
+  <form [formGroup]="loginForm" (submit)="loginUsuario()" novalidate>
+   
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Introduzca su email"
+      [class.invalid]="!loginForm.controls.email.valid && blur"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Contraseña</ion-label>
+      <ion-input formControlName="password" type="password" placeholder="Introduzca su contraseña"
+      [class.invalid]="!loginForm.controls.password.valid && blur"></ion-input>
+    </ion-item>
+
+    <button ion-button block type="submit" [disabled]="!loginForm.valid">
+    	Login
+    </button>
+
+  </form>
+  
+  <button ion-button block clear (click)="registro()">Crear una cuenta</button>
+  
+</ion-content>

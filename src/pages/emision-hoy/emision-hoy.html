@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+ 	 <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Se emiten hoy</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="emision-hoy" padding>
+
+	<ion-row>
+		<ion-col *ngFor="let serie of series" col-6>
+			
+			<ion-card (click)="detallesSerie(serie.id)">
+				<img class="poster" [src]="serie.poster_path"/>
+			</ion-card>
+			
+		</ion-col>
+	</ion-row>
+
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+
+</ion-content>
